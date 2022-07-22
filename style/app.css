@@ -1,0 +1,173 @@
+:root{
+    --principal: #ed4b4c;
+    --secundario: #56c4ae;
+    --tercero: #893197;
+    --fuente-principal: Roboto
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 2rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+main a{
+    all: unset;
+    cursor: pointer;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 6rem;
+    color: var(--principal);
+    margin: 0;
+}
+/* .navegacion{
+    background-color: var(--principal);
+} */
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.nav a{
+    all: unset;
+    color: var(--principal);
+    font-weight: bold;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.hero{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.352),rgba(5, 7, 12, 0.455)), url(../image/tacos.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 70rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero h2{
+    font-size: 7rem;
+}
+.hero button{
+    border: 5px solid white;
+    padding: 1rem 5rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    transition-property: background-color;
+    transition-property: border;
+    transition-duration: .3s;
+}
+.hero button:hover{
+    background-color: white;
+    border: 5px solid var(--principal);
+
+    color: var(--principal);
+}
+.menuSection{
+    background-color: var(--principal);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.tituloMenu{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin: 0;
+}
+.tituloComida{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    margin-top: 7rem;
+    text-decoration: underline;
+}
+.contenedorBorder{
+    border: 8px solid white;
+}
+.div-menu, .div-menuv2{
+    display: grid;
+    align-items: center;
+    padding: 0 4rem;
+    /* border-bottom: 1px solid gray;
+    margin-bottom: 4rem; */
+}
+
+
+/* .div-menuv2{
+    display: grid;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 4rem;
+} */
+@media (min-width: 768px) { 
+    .div-menu{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .div-menu div{
+        padding: 0 4rem;
+    }
+    .div-menuv2{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        grid-auto-flow: column;
+    }
+    .div-menuv2 img{
+        grid-column: 2/3;
+
+    }
+}
+.div-menu h3{
+    color: white;
+    font-weight: bold;
+    text-align: center; 
+}
+.div-menu p{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0 0 3rem 0
+}
+
+
+.img-1{
+    box-shadow: -10px 10px var(--secundario);
+    margin-bottom: 4rem;
+}
+.img-2{
+    box-shadow: 10px 10px var(--tercero);
+    margin-bottom: 4rem;
+}
+.footer{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--principal);
+    color: white;
+    border-top: 1px solid white;
+}

@@ -51,7 +51,7 @@ main a{
     cursor: pointer;
 }
 .hero{
-    background-image: linear-gradient(rgba(5, 7, 12, 0.352),rgba(5, 7, 12, 0.455)), url(../image/tacos.webp);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.352),rgba(5, 7, 12, 0.455)), url(../image/tacosDefinitiva.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
